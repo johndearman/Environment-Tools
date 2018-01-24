@@ -1,0 +1,1 @@
+select id,datetime(date + strftime('%s','2001-01-01'), 'unixepoch'),text from message inner join handle on message.handle_id=handle.rowid order by message.rowid desc limit 50;
